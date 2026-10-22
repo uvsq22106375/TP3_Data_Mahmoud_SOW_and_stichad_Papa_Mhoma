@@ -1,22 +1,20 @@
 # TP3 — Refactoring SOLID — Parcours Data
 
-## Contenu
-- `ReportService.js` : code de départ retranscrit depuis le PDF.
-- `orders.json` : **jeu de données synthétique de travail**, pas le fichier original du professeur.
-- `VIOLATIONS.md` : analyse des violations et réponses Data.
-- `DIAGRAMMES.md` : diagrammes actuel et cible.
-- `REVUE.md` : modèle à compléter après la revue croisée.
-- `CsvFormatter.js` et les tests seront ajoutés pendant la suite du TP.
+## Contenu du projet
 
-## Attention sur les fichiers originaux
-Le ZIP reçu ne contenait pas les fichiers du TP3. Le PDF donne le code de `ReportService.js`, les noms de sept tests et la sortie attendue de la démo, mais pas le contenu complet des tests originaux ni celui du vrai `orders.json`. Le jeu de données présent ici est synthétique et ne doit pas être présenté comme le fichier fourni par l'enseignant.
+- `Re`.`portService.js` : classe principale du service de génération de rapports.
+- `CsvFormatter.js` : classe extraite pour gérer le formatage des rapports CSV.
+- `orders.json` : jeu de données synthétique utilisé pour les tests et la démonstration.
+- `VIOLATIONS.md` : analyse des violations des principes SOLID et réponses aux questions du parcours Data.
+- `DIAGRAMMES.md` : diagrammes de classes avant le refactoring et architecture cible.
+- `REVUE.md` : compte rendu de la revue croisée.
+- `ReportService.caracterisation.test.js` : tests de caractérisation du comportement du service.
+- `ReportService.injection.test.js` : test de l'injection du formateur CSV.
+- `ReportService.behavior.test.js` : tests complémentaires du comportement.
+- `demo.js` : script de démonstration.
+- `package.json` : configuration du projet Node.js
 
-## Exécuter le code de départ
-Il faut Node.js installé. Dans le terminal, depuis ce dossier :
 
-```powershell
-node --version
-node --input-type=module -e "import { ReportService } from './ReportService.js'; console.log(new ReportService().generate('2026-09', 'json'))"
-```
+## Objectif du TP
 
-Cette commande vérifie le chargement des données et le calcul JSON. Les tests de caractérisation originaux restent à récupérer ou à reconstruire séparément.
+L'objectif est d'identifier les violations des principes SOLID dans `ReportService.js`, de proposer une architecture cible plus modulaire et de réaliser une extraction accompagnée de tests, tout en préservant le comportement attendu du service.
