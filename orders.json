@@ -1,0 +1,67 @@
+[
+  {
+    "id": "CMD-001",
+    "date": "2026-09-03",
+    "status": "PAID",
+    "lines": [
+      {
+        "category": "informatique",
+        "qty": 1,
+        "unitPrice": 200
+      }
+    ]
+  },
+  {
+    "id": "CMD-002",
+    "date": "2026-09-12",
+    "status": "PAID",
+    "lines": [
+      {
+        "category": "informatique",
+        "qty": 1,
+        "unitPrice": 216
+      },
+      {
+        "category": "livres",
+        "qty": 1,
+        "unitPrice": 45
+      }
+    ]
+  },
+  {
+    "id": "CMD-003",
+    "date": "2026-09-20",
+    "status": "PAID",
+    "lines": [
+      {
+        "category": "livres",
+        "qty": 2,
+        "unitPrice": 45
+      }
+    ]
+  },
+  {
+    "id": "CMD-004",
+    "date": "2026-09-21",
+    "status": "CANCELLED",
+    "lines": [
+      {
+        "category": "informatique",
+        "qty": 1,
+        "unitPrice": 999
+      }
+    ]
+  },
+  {
+    "id": "CMD-005",
+    "date": "2026-08-28",
+    "status": "PAID",
+    "lines": [
+      {
+        "category": "informatique",
+        "qty": 1,
+        "unitPrice": 500
+      }
+    ]
+  }
+]
